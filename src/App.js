@@ -10,7 +10,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import StatsParDate from "./pages/StatsParDate";
 import AdminPage from "./pages/components/AdminPage";
 import Stores from "./pages/Stores";
-import { ProgressSpinner } from 'primereact/progressspinner';
 import 'moment/locale/fr';
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
