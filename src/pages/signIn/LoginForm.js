@@ -46,7 +46,6 @@ const LoginForm = () => {
          console.log(response);
 
         if (response.success) {
-          console.log("Authentication successful");
 
           const token = Cookies.get("access_token");
           console.log(token);
