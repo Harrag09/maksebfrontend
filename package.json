@@ -1,6 +1,10 @@
 {
   "name": "frontend",
   "version": "0.1.0",
+<<<<<<< HEAD
+=======
+  "proxy": "https://makseb.onrender.com",
+>>>>>>> 74210047b9894ec647565ca525be40d429da9a48
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
