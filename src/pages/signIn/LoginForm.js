@@ -43,6 +43,7 @@ const LoginForm = () => {
     } else {
       try {
         const response = await AuthService.signin(loginData);
+         console.log(response);
 
         if (response.success) {
           console.log("Authentication successful");
