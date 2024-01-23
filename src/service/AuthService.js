@@ -1,6 +1,6 @@
 import axios from "axios";
+const API_BASE_URL = "https://makseb.onrender.com/";
 
-const API_BASE_URL = "/";
 
 const AuthService = {
   signin: async (loginData) => {
@@ -12,6 +12,7 @@ const AuthService = {
           withCredentials: true,
         }
       );
+      console.log(response);
       return response.data;
     } catch (error) {
       throw error;

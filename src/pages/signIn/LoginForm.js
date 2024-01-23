@@ -56,7 +56,7 @@ const LoginForm = () => {
             console.log(userRole);
           } if(userRole==='store'){navigate("/StateLive");}
           else if(userRole==='admin'){navigate("/");}
-          window.location.reload();
+          // window.location.reload();
         } else {
           console.error("Authentication failed");
           setErrorMessage('Password or username incorrect.');

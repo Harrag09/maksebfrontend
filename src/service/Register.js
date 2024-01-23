@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = "/"; // Replace with your actual API URL
+const API_BASE_URL = "https://makseb.onrender.com/";
 
 export const signup = async (userData) => {
   try {
