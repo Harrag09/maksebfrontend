@@ -12,12 +12,15 @@ const AuthService = {
           withCredentials: true,
         }
       );
-      console.log(response);
+      console.log('Signin Response:', response.data);
       return response.data;
     } catch (error) {
+      console.error('Error during signin:', error);
       throw error;
     }
   },
+
+
 
   getUserById: async () => {
     try {
