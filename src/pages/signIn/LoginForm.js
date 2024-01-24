@@ -43,9 +43,9 @@ const LoginForm = () => {
     } else {
       try {
         const response = await AuthService.signin(loginData);
+         console.log(response);
 
         if (response.success) {
-          console.log("Authentication successful");
 
           const token = Cookies.get("access_token");
           console.log(token);
