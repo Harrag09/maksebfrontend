@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "https://makseb.onrender.com/";
+const API_BASE_URL = "http://localhost:8002/";
 
 const Livestats2 = {
   getLivestats2: async () => {
