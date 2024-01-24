@@ -32,8 +32,7 @@ const AuthService = {
     try {
       const user = Cookies.get("idUser");
       const response = await axios.get(`${API_BASE_URL}auth/user`, {
-        withCredentials: true,
-        
+        withCredentials: true,  
   params: {
     idUser: user,
   },
