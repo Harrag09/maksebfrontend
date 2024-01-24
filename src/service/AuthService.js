@@ -17,7 +17,7 @@ const AuthService = {
       Cookies.set("access_token", response.data.data.access_token);
       Cookies.set("loggedIn", "loggedIn");
       Cookies.set("idCRM", response.data.data.idCRM);
-      Cookies.set("idUser", response.data.data.idUser); 
+      Cookies.set("idUser", response.data.data.userid); 
       console.log('Signin Response:', response.data.data.access_token);
       return response.data;
     } catch (error) {
