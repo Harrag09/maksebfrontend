@@ -39,23 +39,23 @@ function App() {
     checkLoggedIn();
   }, []);
   return (
-    <BrowserRouter path="">
+    <BrowserRouter basename="maksebfrontend">
       <Routes>
         {loggedIn ? (
-          <Route path="/maksebfrontend/" element={<MainLayout />}>
+          <Route path="/" element={<MainLayout />}>
               <Route index  element={<Blank />} />
 
             {userRole === "store" && (
               <>
-                <Route index path="/maksebfrontend/StateLive" element={<StatsLive />} />
-                <Route path="/maksebfrontend/StateParDate" element={<StatsParDate />} />
+                <Route index path="/StateLive" element={<StatsLive />} />
+                <Route path="/StateParDate" element={<StatsParDate />} />
                 </>
             )}
 
             {userRole === "admin" && (
               <>
-              <Route   path="/maksebfrontend/AdminPage" element={<AdminPage />} />
-              <Route   path="/maksebfrontend/Store" element={<Stores />} />
+              <Route   path="/AdminPage" element={<AdminPage />} />
+              <Route   path="/Store" element={<Stores />} />
               </>
               
             )}
