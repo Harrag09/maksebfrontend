@@ -39,33 +39,34 @@ function App() {
     checkLoggedIn();
   }, []);
   return (
-    <BrowserRouter >
+    <BrowserRouter>
       <Routes>
         {loggedIn ? (
-          <Route path="/" element={<MainLayout />}>
-              <Route index  element={<Blank />} />
+          <Route
+            path="/"
+            element={<MainLayout />}
+          >
+            <Route index element={<Blank />} />
 
             {userRole === "store" && (
               <>
-                <Route index path="/StateLive" element={<StatsLive />} />
-                <Route path="/StateParDate" element={<StatsParDate />} />
-                </>
+                <Route index path="StateLive" element={<StatsLive />} />
+                <Route path="StateParDate" element={<StatsParDate />} />
+              </>
             )}
 
             {userRole === "admin" && (
               <>
-              <Route   path="/AdminPage" element={<AdminPage />} />
-              <Route   path="/mStore" element={<Stores />} />
+                <Route path="AdminPage" element={<AdminPage />} />
+                <Route path="Store" element={<Stores />} />
               </>
-              
             )}
           </Route>
-
         ) : (
           <Route path="*" element={<LoginForm />} />
         )}
       </Routes>
-    </BrowserRouter >
+    </BrowserRouter>
   );
 }
 
