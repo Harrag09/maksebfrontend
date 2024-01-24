@@ -34,7 +34,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://Harrag09.github.io/maksebfrontend",
   "eslintConfig": {
     "extends": [
       "react-app",
