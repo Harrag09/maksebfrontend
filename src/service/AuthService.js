@@ -1,4 +1,6 @@
 import axios from "axios";
+import Cookies from "js-cookie";
+
 const API_BASE_URL = "http://localhost:8002/";
 
 
@@ -12,7 +14,11 @@ const AuthService = {
           withCredentials: true,
         }
       );
-      console.log('Signin Response:', response.data);
+      Cookies.set("access_token", response.data.data.access_token);
+      Cookies.set("loggedIn", "loggedIn");
+      Cookies.set("idCRM", response.data.data.idCRM);
+      Cookies.set("idUser", response.data.data.idUser); 
+      console.log('Signin Response:', response.data.data.access_token);
       return response.data;
     } catch (error) {
       console.error('Error during signin:', error);
