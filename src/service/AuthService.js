@@ -1,7 +1,7 @@
 import axios from "axios";
 import Cookies from "js-cookie";
 
-const API_BASE_URL = "http://localhost:8002/";
+const API_BASE_URL = "https://makseb.onrender.com/";
 
 
 const AuthService = {

@@ -1,7 +1,7 @@
 import axios from "axios";
 import Cookies from "js-cookie";
 
-const API_BASE_URL = "http://localhost:8002/";
+const API_BASE_URL = "https://makseb.onrender.com/";
 
 const LivestatsService = {
   
@@ -9,6 +9,7 @@ const LivestatsService = {
 
     try {
       const idCRM = Cookies.get("idCRM");
+      console.log("bbbbbbb",idCRM);
       const response = await axios.get(`${API_BASE_URL}livestats`, {
         withCredentials: true,  
 

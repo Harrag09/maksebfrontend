@@ -8,7 +8,7 @@ const Livestats2 = {
     try {
 
        const idCRM = Cookies.get("idCRM");
-
+ console.log("aaaaaaa",idCRM);
       const response = await axios.get(`${API_BASE_URL}livestats2`, {
         withCredentials: true,
          
