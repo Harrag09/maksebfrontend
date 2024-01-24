@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/maksebfrontend/static/css/main.7aa9201e.css",
-    "main.js": "/maksebfrontend/static/js/main.08cf8ff8.js",
+    "main.js": "/maksebfrontend/static/js/main.91900859.js",
     "static/js/642.80b4932b.chunk.js": "/maksebfrontend/static/js/642.80b4932b.chunk.js",
     "static/media/primeicons.svg": "/maksebfrontend/static/media/primeicons.e1441b135b3ca9ad643c.svg",
     "static/media/Inter-italic.var.woff2?v=3.19": "/maksebfrontend/static/media/Inter-italic.var.30807be7abc48ba8c73c.woff2",
@@ -14,11 +14,11 @@
     "static/media/profil.jpg": "/maksebfrontend/static/media/profil.5f76afc4d244b2423c57.jpg",
     "index.html": "/maksebfrontend/index.html",
     "main.7aa9201e.css.map": "/maksebfrontend/static/css/main.7aa9201e.css.map",
-    "main.08cf8ff8.js.map": "/maksebfrontend/static/js/main.08cf8ff8.js.map",
+    "main.91900859.js.map": "/maksebfrontend/static/js/main.91900859.js.map",
     "642.80b4932b.chunk.js.map": "/maksebfrontend/static/js/642.80b4932b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7aa9201e.css",
-    "static/js/main.08cf8ff8.js"
+    "static/js/main.91900859.js"
   ]
 }
