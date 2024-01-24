@@ -52,15 +52,17 @@ const Sidebar = () => {
   };
 
   const handleLogout = async () => {
-    try {
-      await LogoutService.signout();
-      window.location.reload();
-      console.log("User logged out successfully!");
-      localStorage.clear();
 
-    } catch (error) {
-      console.error("Error during logout:", error);
-    }
+    localStorage.clear();
+    Cookies.remove('idCRM');
+    Cookies.remove('idUser');
+    Cookies.remove('loggedIn');
+    Cookies.remove('access_token');
+
+    window.location.reload();
+      console.log("User logged out successfully!");
+
+
   };
 
   return (

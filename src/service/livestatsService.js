@@ -1,12 +1,20 @@
 import axios from "axios";
+import Cookies from "js-cookie";
 
 const API_BASE_URL = "http://localhost:8002/";
 
 const LivestatsService = {
+  
   getLivestats: async () => {
+
     try {
+      const idCRM = Cookies.get("idCRM");
       const response = await axios.get(`${API_BASE_URL}livestats`, {
-        withCredentials: true,
+        withCredentials: true,  
+
+        params: {
+          idCRM: idCRM,
+        },
       });
       return response.data;
     } catch (error) {
