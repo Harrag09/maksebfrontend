@@ -55,7 +55,7 @@ function App() {
             {userRole === "admin" && (
               <>
               <Route   path="/AdminPage" element={<AdminPage />} />
-              <Route   path="/Store" element={<Stores />} />
+              <Route   path="/mStore" element={<Stores />} />
               </>
               
             )}
