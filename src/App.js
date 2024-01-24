@@ -46,14 +46,14 @@ function App() {
           <Route index element={<Blank />} />
           {userRole === "store" && (
             <>
-              <Route index path="/StateLive" element={<StatsLive />} />
-              <Route path="/StateParDate" element={<StatsParDate />} />
+              <Route index path="StateLive" element={<StatsLive />} />
+              <Route path="StateParDate" element={<StatsParDate />} />
             </>
           )}
           {userRole === "admin" && (
             <>
-              <Route path="/AdminPage" element={<AdminPage />} />
-              <Route path="/Store" element={<Stores />} />
+              <Route path="AdminPage" element={<AdminPage />} />
+              <Route path="Store" element={<Stores />} />
             </>
           )}
         </Route>
