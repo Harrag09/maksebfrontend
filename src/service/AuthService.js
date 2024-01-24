@@ -30,8 +30,13 @@ const AuthService = {
 
   getUserById: async () => {
     try {
+      const user = Cookies.get("idUser");
       const response = await axios.get(`${API_BASE_URL}auth/user`, {
         withCredentials: true,
+        
+  params: {
+    idUser: user,
+  },
       });
       return response.data;
     } catch (error) {
