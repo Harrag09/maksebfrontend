@@ -14,8 +14,8 @@ const AuthService = {
           withCredentials: true,
         }
       );
-      Cookies.set("access_token", response.data.data.access_token);
-      Cookies.set("loggedIn", "loggedIn");
+      Cookies.set("access_token", response.data.data.access_token,{ sameSite: 'None', secure: true });
+      Cookies.set("loggedIn", "loggedIn",{ sameSite: 'None', secure: true });
       Cookies.set("idCRM", response.data.data.idCRM);
       Cookies.set("idUser", response.data.data.userid); 
       console.log('Signin Response:', response.data.data.access_token);
