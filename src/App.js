@@ -37,9 +37,9 @@ function App() {
       }
     };
     checkLoggedIn();
-  }, []);
+  },  []);
   return (
-    <BrowserRouter  basename="/maksebfrontend" >
+    <BrowserRouter   >
       <Routes>
         {loggedIn ? (
           <Route path="/" element={<MainLayout />}>
