@@ -1,5 +1,5 @@
 import "./scss/App.scss";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {HashRouter  , Routes, Route } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
 import StatsLive from "./pages/StatsLive";
 import Blank from "./pages/Blank";
@@ -39,7 +39,7 @@ function App() {
     checkLoggedIn();
   },  []);
   return (
-    <BrowserRouter  basename="/maksebfrontend" >
+    <HashRouter  basename="/maksebfrontend" >
       <Routes>
         {loggedIn ? (
           <Route path="/" element={<MainLayout />}>
@@ -62,7 +62,7 @@ function App() {
           <Route path="*" element={<LoginForm />} />
         )}
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

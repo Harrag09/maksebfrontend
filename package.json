@@ -40,7 +40,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "./",
+  "homepage": "https://harrag09.github.io/maksebfrontend",
 
   "browserslist": {
     "production": [
